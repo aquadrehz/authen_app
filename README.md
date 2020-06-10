@@ -1,16 +1,9 @@
-# README
+# Rails Authen
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
+* Ruby: 2.7
+* Rails: 6.0.3 
+* System dependencies: N/A
 * Configuration
-
 * Database creation
 
 * Database initialization
@@ -21,4 +14,12 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+
+#Command Note
+psql
+CREATE DATABASE authen_app_test;
+CREATE DATABASE authen_app_development;
+CREATE DATABASE authen_app_production;
+
+rails generate scaffold User username:string email:string
+rails generate scaffold Article title:string description:string user_id:int
